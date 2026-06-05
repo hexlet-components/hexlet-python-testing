@@ -1,8 +1,13 @@
 install:
-	poetry install
+	uv sync
 
 test:
-	poetry run pytest
+	uv run pytest
 
 test-coverage:
-	poetry run pytest --cov=hexlet_python_package --cov-report xml
+	uv run pytest --cov=hexlet_pytest --cov-report xml
+
+lint:
+	uv run ruff check
+
+check: test lint

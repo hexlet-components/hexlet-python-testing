@@ -1,15 +1,22 @@
-[tool.poetry]
-name = "hexlet_pytest"
+[project]
+name = "hexlet-pytest"
 version = "0.1.0"
-description = ""
-authors = ["Hexlet"]
+description = "Example project for learning pytest"
+authors = [{name = "Hexlet Team", email = "info@hexlet.io"}]
+license = "ISC"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
 
-[tool.poetry.dependencies]
-python = "^3.8"
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-cov>=6.0",
+    "ruff>=0.9",
+]
 
-[tool.poetry.dev-dependencies]
-pytest = "^8.3"
+[tool.uv]
+package = false
 
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+[tool.ruff]
+line-length = 80
