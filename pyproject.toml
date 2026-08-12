@@ -5,7 +5,7 @@ description = "Example project for learning pytest"
 authors = [{name = "Hexlet Team", email = "info@hexlet.io"}]
 license = "ISC"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = []
 
 [dependency-groups]
