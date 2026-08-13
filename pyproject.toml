@@ -20,3 +20,6 @@ package = false
 
 [tool.ruff]
 line-length = 80
+
+[tool.ruff.lint]
+select = ["E", "F", "C90"]
